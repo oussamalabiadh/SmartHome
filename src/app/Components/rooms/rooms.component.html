@@ -1,0 +1,23 @@
+<section>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-4  bg-body-tertiary">
+          <h1 class=""> Your Rooms</h1>
+          <ul class="list-group">
+            <li *ngFor="let room of rooms" class="list-group-item my-1" (click)="selectRoom(room.id)"
+            [ngClass]="{'selected-room': selectedRoom && selectedRoom.id === room.id}"
+            >
+              {{ room.name }}
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-8  text-center pt-5">
+          <div *ngIf="selectedRoom" class="room-details">
+            <h2 class=" first-color">{{ selectedRoom.name }}</h2>
+            <img class="w-50" src="./assets/image/lamp-{{ selectedRoom.lampState }}.PNG" (click)="toggleLamp(selectedRoom.id)">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

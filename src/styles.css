@@ -1,0 +1,100 @@
+  /*========== Colors ==========*/
+  .first-color{ color:  #00AEC9}
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap");
+:root {
+   --rose-color:#00AEC9;
+   --section-color: rgb(248, 249, 250);
+}
+ a{
+   text-decoration: none;
+   color: #00AEC9;
+ }
+ li{
+   list-style: none;
+ }
+section {
+   padding: 80px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Montserrat", sans-serif;
+}
+
+body {
+   font-family: "Nunito Sans", sans-serif;
+}
+
+.color-rose {
+   color: var(--rose-color);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+   color: var(--rose-color);
+   font-weight: 900;
+}
+
+.setting {
+   position: fixed;
+   top: 30%;
+   left: 0;
+   z-index: 99;
+   background-color: #000;
+   color: #fff;
+   padding: 5px 10px;
+   border-radius: 0 5px 5px 0;
+}
+
+.main-btn {
+   all: unset;
+   cursor: pointer;
+   background-color: var(--rose-color);
+   padding: 10px 25px;
+   border-radius: 5px;
+   display: inline-block;
+   color: #fff;
+   text-transform: uppercase;
+}
+/*========== VARIABLES CSS ==========*/
+:root {
+    --header-height: 3.5rem;
+    --nav-width: 219px;
+  
+    /*========== Colors ==========*/
+    --first-color: #00AEC9;
+    --first-color-light: #F4F0FA;
+    --title-color: #19181B;
+    --text-color: #58555E;
+    --text-color-light: #A5A1AA;
+    --body-color: #F9F6FD;
+    --container-color: #FFFFFF;
+  
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+    --normal-font-size: .938rem;
+    --small-font-size: .75rem;
+    --smaller-font-size: .75rem;
+  
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  
+    /*========== z index ==========*/
+    --z-fixed: 100;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    :root {
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+    }
+  }

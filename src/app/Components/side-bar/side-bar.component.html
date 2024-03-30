@@ -1,0 +1,95 @@
+
+  <!--========== HEADER ==========-->
+  <header class="header">
+    <div class="header__container">
+        <img src="./assets/image/home-front-side-white-background-removebg-preview.png" alt="" class="header__img">
+   
+        <a href="#" class="header__logo fs-3">SmartHome</a>
+
+        <div class="header__search bg-white pt-3">
+           <ul><li><a routerLink="/about" class="">About</a></li></ul>
+           <ul><li><a routerLink="/Contact" class="">Contact</a></li></ul>
+           <ul><li><a routerLink="/Fournisseurs" class="">Fournisseurs</a></li></ul>
+        </div>
+
+        <div class="header__toggle ">
+            <button id="header-toggle" class="rounded-2"><i class="fa-solid fa-bars" ></i></button>
+        </div>
+    </div>
+</header>
+<div class="nav" id="navbar">
+    <nav class="nav__container">
+        <div>
+            <a routerLink="/home-dashboard" class="nav__link nav__logo">
+                <i class="fas fa-home first-color"></i>
+                <span class="nav__logo-name px-2 first-color ">Smart Home</span>
+            </a>
+
+            <div class="nav__list">
+                <div class="nav__items">
+                    <div class="nav__dropdown">
+                        <a href="#" class="nav__link">
+                            <i class="fa-solid fa-address-card first-color"></i>
+                            <span class="nav__name first-color px-2">Profile</span>
+<i class="fa-solid fa-angle-down first-color"></i>                        </a>
+
+                        <div class="nav__dropdown-collapse">
+                            <div class="nav__dropdown-content">
+                                <a href="#" class="nav__dropdown-item first-color">Passwords</a>
+                                <a href="#" class="nav__dropdown-item first-color">Mail</a>
+                                <a href="#" class="nav__dropdown-item first-color">Accounts</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="nav__link">
+                        <i class='fab fa-facebook-messenger first-color' ></i>
+                        <span class="nav__name first-color px-2">Messages</span>
+                    </a>
+                </div>
+                <a href="#" class="nav__link">
+                    <i class='fas fas fa-users first-color' ></i>
+                    <span class="nav__name first-color px-2">Users</span>
+                </a>
+                <div class="nav__items">
+                    <a routerLink="/room" class="nav__link">
+                        <i class="fa-solid fa-hotel first-color"></i>
+                        <span class="nav__name first-color px-2">Rooms</span>
+                    </a>
+                    <a routerLink="/settings" class="nav__link">
+                        <i class="fa-solid fa-gear first-color"></i>
+                        <span class="nav__name first-color px-2">Fonctionalité</span>
+                    </a>
+                    <div class="nav__dropdown">
+                        <a href="#" class="nav__link">
+                            <i class="fa-solid fa-bell first-color"></i>
+                            <span class="nav__name first-color px-2">Notifications</span>
+<i class="fa-solid fa-angle-down first-color"></i>                        </a>
+
+                        <div class="nav__dropdown-collapse">
+                            <div class="nav__dropdown-content">
+                                <a href="#" class="nav__dropdown-item first-color">Blocked</a>
+                                <a href="#" class="nav__dropdown-item first-color">Silenced</a>
+                                <a href="#" class="nav__dropdown-item first-color">Publish</a>
+                                <a href="#" class="nav__dropdown-item first-color">Program</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                  
+                    <a href="#" class="nav__link">
+                        <i class="fa-solid fa-gear first-color"></i>
+                        <span class="nav__name first-color px-2">Settings</span>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <a class="nav__link nav__logout" (click)="logout()">
+            <i class="fa-solid fa-right-from-bracket first-color"></i>
+            <span class="nav__name first-color px-2">Log Out</span>
+        </a>
+    </nav>
+</div>
